@@ -26,6 +26,14 @@ public class linkedList {
        return listLength;
    }
 
+    /**
+     * Delete a head from head list
+     * @return
+     */
+    public void  deleteAtHead(){
+        this.head = head.getNextNode();
+    }
+
     @Override
     public String toString(){
        String result = "{";
