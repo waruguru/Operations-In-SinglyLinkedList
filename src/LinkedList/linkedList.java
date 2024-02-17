@@ -34,6 +34,21 @@ public class linkedList {
         this.head = head.getNextNode();
     }
 
+    /**
+     * Search for an item froma LinkedList
+     * Timecomplexity s 0(n)
+     */
+    public Node searchItem(int data){
+        Node current = this.head;
+        while (current !=null){
+            if (current.getData() == data){
+                return current;
+            }
+            current = current.getNextNode();
+        }
+        return null;
+    }
+
     @Override
     public String toString(){
        String result = "{";
